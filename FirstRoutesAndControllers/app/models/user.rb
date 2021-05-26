@@ -1,5 +1,5 @@
 class User < ApplicationRecord
-    validates :username, uniqueness: { scope: :artwork}
+    validates :username, uniqueness: { scope: :artworks}
     
     has_many :artworks,
     class_name: :Artwork,
