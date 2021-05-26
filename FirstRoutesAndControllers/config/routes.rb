@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   
   get '/users/:id', to: 'users#show'
 
-  post '/users/:id', to: 'users#create'
+  post '/users', to: 'users#create'
 
   patch '/users/:id', to: 'users#update'
 
